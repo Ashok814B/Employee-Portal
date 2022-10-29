@@ -9,7 +9,7 @@ import { Router } from "@angular/router";
 })
 export class DashboardComponent implements OnInit {
 
-  public expense: string = "Expense Title";
+  public expense: string = "Employee";
   public expenseButton: string = "submit";
   public expenseClass: string = "btn btn-success";
   public searchName: string = "";
@@ -35,7 +35,7 @@ export class DashboardComponent implements OnInit {
   }
 
   onDeleteHandler(i: any) {
-    alert(i);
+    alert("Conform to delete Employee");
     let id = this.list[i]._id;
     // this.list.splice(i,1);
     // sessionStorage.setItem("list",JSON.stringify(this.list));
@@ -94,7 +94,7 @@ export class DashboardComponent implements OnInit {
 
   onSubmitHandler(event: any) {
     event.preventDefault();
-    alert("onsubmit");
+    alert("Search");
   }
 
   onShowHandler() {
